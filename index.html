@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Firebase - Train</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="firebase-train.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="header">Anytime is Train Time</h1>
+  </div>
+</div>
+
+<div class = "container" id = "main">
+
+    <div class = "row">
+      <div class = "col-sm-1"></div>
+        <div class = "col-sm-10" id = "schedule"><h3 style="text-align: center;">Train Schedule</h3>
+<!-- Need a table -->
+        <table class="table table-striped">
+          <thead class="thead-dark">
+            <tr style="text-align: right; color: white;background-color: black">
+              <th scope="col">Train</th>
+              <th scope="col">Destination</th>
+              <th scope="col">Frequency</th>
+              <th scope="col">Next Arrival</th>
+              <th scope="col">Minutes Away</th>
+            </tr>
+          </thead>
+          <tbody id = "trainData">
+            <tr></tr>
+          </tbody>
+        </table>
+        </div>
+      <div class = "col-sm-1"></div>
+    </div>
+<br>
+<!-- Need a form-->
+
+  <div class = "row">
+    <div class = "col-sm-1"></div>
+      <div class = "col-sm-10" id = "addTrain"><h3 style="background-color: black;color: white;text-align: center; line-height: 40px;">Add a Train<hr></h3>
+        <form>
+          <div class="form-group">
+            <label class="col-form-label" for="trainName">Train</label>
+            <input type="text" class="form-control" id="trainName" placeholder="Train Name">
+            <label class="col-form-label" for="destination">Destination</label>
+            <input type="text" class="form-control" id="destination" placeholder="Destination">
+            <label class="col-form-label" for="firstTrain">First Train Time (HH:mm) Military Time</label>
+            <input type="text" class="form-control" id="firstTrain" placeholder="First Train">
+            <label class="col-form-label" for="frequency">Frequency (mins)</label>
+            <input type="text" class="form-control" id="frequency" placeholder="Frequency (min)">
+            <br>
+            <input id="submit" type="button" class="btn btn-secondary" value="Submit">
+          </div>
+        </form>
+      </div>
+    <div class = "col-sm-1"></div><br>
+</div>
+<br>
+</div> 
+
+<footer> &copy copyright 2018 Mehathab Shaik</footer>
+
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+<script type="text/javascript" src="firebase-train.js"></script>
+</body>
+</html>

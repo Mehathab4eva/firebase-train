@@ -1,0 +1,40 @@
+body {
+	background-color: #bfc9d0;
+}
+
+.jumbotron {
+	
+	border-bottom: 2px solid white;
+	background-color: brown;
+}
+.header {
+	text-align: center;
+	font-size: 56px;
+	color: white;
+	text-shadow: 2px 2px 4px black;
+}
+
+h3{
+	color: #6f0303;
+}
+
+
+#trainData{
+	color: black;
+	text-align: center;
+	background-color: grey;
+}
+
+#addTrain {
+	border: 2px solid black;
+	padding: 77px;
+	background-color: grey;
+}
+
+footer{
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+	background-color: black;
+}
